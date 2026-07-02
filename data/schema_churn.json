@@ -1,0 +1,17 @@
+{
+  "cliente_id":          { "tipo": "string",     "dominio": null,                                          "usar_como_feature": false },
+  "tpv_medio_mensal":    { "tipo": "float",       "dominio": { "min": 0 },                                  "usar_como_feature": true },
+  "variacao_tpv_3m":     { "tipo": "float",       "dominio": null,                                          "usar_como_feature": true },
+  "dias_sem_transacao":  { "tipo": "int",         "dominio": { "min": 0 },                                  "usar_como_feature": true },
+  "tempo_cliente_meses": { "tipo": "int",         "dominio": { "min": 0 },                                  "usar_como_feature": true },
+  "num_produtos_ativos": { "tipo": "int",         "dominio": { "min": 0 },                                  "usar_como_feature": true },
+  "ticket_medio":        { "tipo": "float",       "dominio": { "min": 0 },                                  "usar_como_feature": true },
+  "num_chamados_suporte":{ "tipo": "int",         "dominio": { "min": 0 },                                  "usar_como_feature": true },
+  "nps_ultimo":          { "tipo": "int",         "dominio": { "min": 0, "max": 10 },                       "usar_como_feature": true },
+  "segmento":            { "tipo": "categorica",  "dominio": { "valores": ["basico", "standard", "premium"] },        "usar_como_feature": true },
+  "regiao":              { "tipo": "categorica",  "dominio": { "valores": ["norte", "nordeste", "centro-oeste", "sudeste", "sul"] }, "usar_como_feature": true },
+  "tem_maquininha":      { "tipo": "categorica",  "dominio": { "valores": ["sim", "nao"] },                 "usar_como_feature": true },
+  "plano":               { "tipo": "categorica",  "dominio": { "valores": ["basico", "intermediario", "avancado"] }, "usar_como_feature": true },
+  "usa_app_mobile":      { "tipo": "categorica",  "dominio": { "valores": ["sim", "nao"] },                 "usar_como_feature": true },
+  "churn":               { "tipo": "binaria",     "dominio": { "valores": ["0", "1"] },                     "usar_como_feature": false, "alvo": true }
+}
