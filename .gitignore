@@ -1,0 +1,50 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local notebook/runtime outputs
+*.log
+*.tmp
+*.temp
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment files
+.env
+.env.*
+
+# Model and ML caches
+.cache/
+cache/
+models/
+modelos/
+checkpoints/
+*.joblib
+*.pkl
+*.pickle
+
+# Keep project datasets versioned.
+!data/*.csv
+!data/*.json
