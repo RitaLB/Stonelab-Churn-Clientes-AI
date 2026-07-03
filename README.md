@@ -1,30 +1,38 @@
-# Stonelab Challenge — Case B: Churn de Clientes
+# Stonelab Challenge - AP2 Inteligência Artificial
 
-Sistemas Inteligentes — Atividade Prática 2 (2026/1). Pipeline que prevê churn de lojistas e gera explicação em linguagem natural para a previsão.
+Atividade Prática 2 (2026/1) - Case B: Churn de Clientes. O projeto constrói um pipeline para prever churn de lojistas e gerar uma explicação curta, coerente e fiel aos dados para apoiar o time de retenção.
 
 ## Estrutura
 
-```
+```text
 .
 ├── data/
-│   └── churn_clientes.csv        # dataset (30 clientes)
+│   ├── dataset-churn.csv             # dataset bruto
+│   ├── dataset-churn-corrigido.csv   # dataset corrigido/intermediário
+│   └── schema_churn.json             # dicionário de dados e domínios
 ├── notebooks/
-│   └── stonelab_churn.ipynb      # notebook principal
+│   └── stone_churn_clients.ipynb     # notebook principal
 └── README.md
 ```
 
 ## Como executar
 
-Abra `notebooks/stonelab_churn.ipynb` no Google Colab e rode todas as células (Ambiente de execução → Executar tudo). O dataset é carregado automaticamente via URL raw do GitHub — não requer upload manual.
+Abra `notebooks/stone_churn_clients.ipynb` no Google Colab e execute todas as células. O notebook tenta carregar os dados locais quando estiver rodando dentro do repositório; caso contrário, usa as URLs raw do GitHub, sem upload manual.
 
-## Conteúdo
+O ambiente-alvo é Google Colab. As células instalam ou importam as dependências necessárias para análise, modelagem e geração de texto.
 
-- **4.1** Representação do conhecimento (pré-processamento justificado)
-- **4.2** Análise exploratória (EDA)
-- **4.3** Modelagem preditiva — Regressão Logística e Random Forest, com validação cruzada e otimização de hiperparâmetros
-- **4.4** Geração de texto — três abordagens: Templates, LLM (flan-t5) e Híbrida
-- **5** Avaliação da qualidade do texto — rubrica humana e ROUGE-L
+## Conteúdo Do Notebook
+
+- **4.1 Representação do conhecimento:** validação pelo schema, correção estrutural, imputação, padronização e one-hot encoding.
+- **4.2 Análise exploratória:** distribuição de classes, visualizações por classe, correlações e hipóteses.
+- **4.3 Modelagem preditiva:** Regressão Logística e Random Forest com `Pipeline`, validação cruzada estratificada, `GridSearchCV`, métricas e matriz de confusão.
+- **4.4 Geração de texto:** abordagem por templates e abordagem LLM via Hugging Face/prompt engineering.
+- **5 Avaliação da qualidade do texto:** rubrica de coerência, completude e fidelidade, tabela de avaliação e análise crítica.
+
+## Referências E Uso De IA Generativa
+
+- Codex/GPT foi usado para apoiar o planejamento, estruturação do notebook e redação inicial de explicações.
 
 ## Integrantes
 
-_(preencher)_
+- Leonardo Guimarães de Melo Brito
