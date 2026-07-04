@@ -12,7 +12,6 @@ Atividade Prática 2 (2026/1) - Case B: Churn de Clientes. O projeto constrói u
 │   └── schema_churn.json             # dicionário de dados e domínios
 ├── notebooks/
 │   └── stone_churn_clients.ipynb     # notebook principal
-├── AGENTS.md                         # guia para próximos prompts e manutenção
 └── README.md
 ```
 
