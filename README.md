@@ -36,3 +36,5 @@ O ambiente-alvo é Google Colab. As células instalam ou importam as dependênci
 ## Integrantes
 
 - Leonardo Guimarães de Melo Brito
+- Rita Louro Barbosa
+- Yuiti Kaneiko Leite
